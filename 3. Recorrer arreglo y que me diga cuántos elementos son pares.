@@ -1,0 +1,22 @@
+import jeliot.io.*;
+
+public class MyClass {
+    public static void main() {
+       //Recorrer el arreglo y que me diga cuántos elementos del arreglo son pares.
+       
+    int arre[]=new int[5];
+    for(int x=0; x<5; x++)
+    {
+      arre[x]=x+1;
+    }
+    int contador=0;
+    for(int x=0; x<5; x++)
+    {
+     if(arre[x]%2==0)
+     {
+       contador++;
+     }
+    }
+    System.out.println("Hay "+contador+ " elementos que son pares.");
+  }
+}
