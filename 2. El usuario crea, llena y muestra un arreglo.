@@ -1,0 +1,34 @@
+import jeliot.io.*;
+
+public class MyClass {
+    public static void main() {
+// El usuario crea, llena y muestra un arreglo.
+    int n;
+    System.out.println("¿De cuántas cajitas será el arreglo?");
+    n=Input.readInt();
+         int arre[]= new int [n];
+   for(int x=0; x<n; x++)
+   {
+    System.out.println("Introduzca un número entero positivo para la posición "+x);
+    arre[x]=Input.readInt();
+   }
+  System.out.println("Si quiere ver todo el contenido del arreglo, presione 1. Si solo quiere ver un elemento, presione 2.");
+   int z=Input.readInt();
+   if(z==1)
+   {
+     System.out.println("Los elementos del arreglo son: ");
+     for(int x=0; x<n; x++)
+     {
+       System.out.println(arre[x]);
+     }
+   }
+   else if(z==2)
+   {
+     System.out.println("¿En cuál subíndice quiere descubrir el elemento?");
+     int x=Input.readInt();
+     System.out.println("Este es su elemento: "+x);
+   }
+   else
+   System.out.println("¡SOLAMENTE TIENE DOS OPCIONES!, intente de nuevo");
+  }
+}
