@@ -1,0 +1,24 @@
+import jeliot.io.*;
+// TEMA: ARREGLOS
+
+public class MyClass {
+    public static void main() {
+      
+    //Declaración de un arreglo(con subíndice predeterminado:
+     int arre[]=new int[6];
+      
+ //Llenar un arreglo predeterminadamente (EXISTEN DIVERSAS MANERAS DE ASIGNARLE UN VALOR)
+    arre[0]=1;
+    arre[1]=6;
+    arre[2]=arre[0]-1;
+    arre[3]=2*4;
+    arre[4]=arre[0];
+    arre[5]=arre[1]+arre[0]+arre[0]+1;
+    
+//Mostrar elementos del arreglo
+    for(int x=0; x<6; x++)
+    {
+      System.out.println(arre[x]);
+    }    
+  }
+}
