@@ -1,0 +1,21 @@
+//HECHO EN NETBEANS
+
+ import java.util.Scanner;
+ public static void main(String[] args) {
+        //Hacer lo que un substring haría: 
+    Scanner sc = new Scanner(System.in);
+        
+       System.out.println("Inserte una palabra");
+       String palabra=sc.nextLine();
+       char[] arrepa=palabra.toCharArray();
+    
+     System.out.println("¿Desde qué caracter deseas obtener la palabra?");
+     int desde=sc.nextInt();
+     System.out.println("¿Hasta qué caracter deseas obtener la palabra?");
+     int hasta=sc.nextInt();
+     
+     for(int x=desde; x<=hasta-1; x++)
+     {
+       System.out.print(arrepa[x]);
+     }
+ }
