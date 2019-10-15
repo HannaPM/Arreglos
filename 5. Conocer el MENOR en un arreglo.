@@ -2,7 +2,6 @@
 import jeliot.io.*;
 public class MyClass {
     public static void main() {
-    //conocer el mayor elemento de un arreglo
     int arre[]=new int[6];
     arre[0]=9;
     arre[1]=3;
