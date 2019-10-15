@@ -1,0 +1,24 @@
+//HECHO EN JELIOT
+import jeliot.io.*;
+public class MyClass {
+    public static void main() {
+    //conocer el mayor elemento de un arreglo
+    int arre[]=new int[6];
+    arre[0]=9;
+    arre[1]=3;
+    arre[2]=1;
+    arre[3]=6;
+    arre[4]=2;
+    arre[5]=10;
+    
+    int menor=arre[0];
+    for (int x=0; x<6; x++)
+    {
+      if(menor>arre[x])
+      {
+       menor=arre[x];
+      }
+    }
+    System.out.println(menor);
+  }
+}
