@@ -1,9 +1,6 @@
 import jeliot.io.*;
-
 public class MyClass {
     public static void main() {
-       //Recorrer el arreglo y que me diga cuántos elementos del arreglo son pares.
-       
     int arre[]=new int[5];
     for(int x=0; x<5; x++)
     {
