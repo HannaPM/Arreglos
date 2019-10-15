@@ -1,0 +1,28 @@
+//HECHO EN JELIOT
+import jeliot.io.*;
+public class MyClass {
+    public static void main() {
+    //conocer el mayor elemento de un arreglo
+    int arre[]=new int[6];
+    arre[0]=6;
+    arre[1]=2;
+    arre[2]=4;
+    arre[3]=4;
+    arre[4]=2;//Si cambiamos este elemento a otro valor, al final imprimirá que No es capícua.
+    arre[5]=6;
+    int x=0,y=5;
+    while(x<y&&arre[x]==arre[y])
+    {
+     x++;
+     y--;
+    }
+    if(arre[x]==arre[y])
+    {
+     System.out.println("Es capícua");
+    }
+    else
+    {
+     System.out.println("No es capícua");
+    }  
+  }
+}
